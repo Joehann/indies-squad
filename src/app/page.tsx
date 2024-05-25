@@ -11,8 +11,6 @@ import {
 export default function Home() {
   const { user } = useAuth()
 
-  console.log(user)
-
   return (
     <div>
       <SignedIn>
@@ -28,10 +26,6 @@ export default function Home() {
           <button>Connexion</button>
         </LoginButton>
       </SignedOut>
-
-      <div style={{ width: '300px', margin: '8px' }}>
-        <input type="text" placeholder="test" />
-      </div>
     </div>
   )
 }

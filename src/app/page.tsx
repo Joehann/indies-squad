@@ -28,6 +28,10 @@ export default function Home() {
           <button>Connexion</button>
         </LoginButton>
       </SignedOut>
+
+      <div style={{ width: '300px', margin: '8px' }}>
+        <input type="text" placeholder="test" />
+      </div>
     </div>
   )
 }

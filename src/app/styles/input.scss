@@ -1,0 +1,16 @@
+@import './variables/variables.scss';
+
+input {
+  height: 40px;
+  width: 100%;
+  padding: 0 12px;
+  background: #fff;
+  color: $blue-400;
+  border: 1px solid $blue-400;
+  border-radius: 12px;
+
+  &::placeholder {
+    color: $grey-200;
+    font-style: italic;
+  }
+}

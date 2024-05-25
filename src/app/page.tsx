@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import {
   useAuth,
@@ -6,7 +6,7 @@ import {
   SignedOut,
   LoginButton,
   LogoutButton,
-} from "@kobbleio/next/client"
+} from '@kobbleio/next/client'
 
 export default function Home() {
   const { user } = useAuth()
@@ -17,13 +17,15 @@ export default function Home() {
     <div>
       <SignedIn>
         <p>Welcome, {user?.name}</p>
-        <LogoutButton />
+        <LogoutButton>
+          <button className="blue">Déconnexion</button>
+        </LogoutButton>
       </SignedIn>
 
       <SignedOut>
         <p>Not authenticated</p>
         <LoginButton>
-          <button style={{ background: "red" }}>Connexion</button>
+          <button>Connexion</button>
         </LoginButton>
       </SignedOut>
     </div>

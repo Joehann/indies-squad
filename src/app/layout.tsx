@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { KobbleProvider } from '@kobbleio/next/server'
 import './styles/reset.css'
-import './styles/globals.scss'
+import './styles/_main.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 

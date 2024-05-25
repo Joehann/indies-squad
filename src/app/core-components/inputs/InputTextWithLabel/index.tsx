@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import style from './input-with-label.module.scss'
+import style from './input-text-with-label.module.scss'
 
 const InputWithLabel = ({
   id,

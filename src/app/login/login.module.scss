@@ -1,0 +1,55 @@
+@import '../../styles/variables/variables.scss';
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  margin-inline: auto;
+  padding-inline: 36px;
+
+  h1 {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  button {
+    width: 220px;
+    margin: 60px auto 0;
+  }
+
+  .divider {
+    height: 1px;
+    width: 80px;
+    margin: 80px auto;
+    background: #333;
+  }
+
+  .providers {
+    display: flex;
+    gap: 42px;
+
+    button.provider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 65px;
+      width: 70px;
+      background: $blue-400;
+      margin: 0;
+
+      &:hover {
+        background: $blue-300;
+      }
+    }
+  }
+}

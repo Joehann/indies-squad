@@ -3,17 +3,29 @@
 input[type='text'],
 input[type='password'],
 input[type='email'] {
-  height: 40px;
+  height: 48px;
   width: 100%;
   padding: 0 12px;
   background: #fff;
   color: $blue-400;
   font-size: 14px;
   border: 1px solid $blue-400;
-  border-radius: 12px;
+  border-radius: 8px;
 
   &::placeholder {
     color: $grey-200;
     font-style: italic;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $orange-400;
+    background: #fff;
+  }
+
+  &:active {
+    outline: none;
+    border-color: $orange-400;
+    background: #fff;
   }
 }

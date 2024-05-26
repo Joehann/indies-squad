@@ -2,7 +2,8 @@
 @import './button.scss';
 @import './input.scss';
 
-* {
+*,
+body {
   font-family: $rubik;
   box-sizing: border-box;
 }
@@ -15,4 +16,8 @@ h1 {
   color: $orange-400;
   font-family: $marker !important;
   font-size: 24px !important;
+}
+
+p {
+  font-family: $rubik;
 }

@@ -1,0 +1,18 @@
+@import '../../../../styles/variables/variables.scss';
+
+.input-with-label {
+  position: relative;
+
+  label {
+    position: absolute;
+    left: 10px;
+    background: #fff;
+    padding: 0 4px;
+    color: $blue-400;
+    font-size: 12px;
+  }
+
+  input {
+    margin-top: 6px;
+  }
+}

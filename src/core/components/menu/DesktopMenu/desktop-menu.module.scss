@@ -1,0 +1,45 @@
+@import '../../../../styles/variables/variables.scss';
+
+.desktop-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 76px;
+  padding: 12px;
+  background: #fafafa;
+  box-shadow: 0 2px 8px #00000044;
+  z-index: 100;
+
+  .links {
+    display: flex;
+    align-items: baseline;
+    gap: 46px;
+
+    ul {
+      display: flex;
+      gap: 28px;
+      text-transform: uppercase;
+      font-family: $rubik;
+      font-weight: 400;
+      color: $grey-200;
+
+      li {
+        padding-bottom: 8px;
+        cursor: pointer;
+
+        &.selected {
+          color: $orange-400;
+          border-bottom: 2px solid $orange-400;
+        }
+
+        &:hover {
+          border-bottom: 2px solid $orange-400;
+        }
+      }
+    }
+  }
+}

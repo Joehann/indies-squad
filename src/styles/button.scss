@@ -10,10 +10,6 @@ button {
   cursor: pointer;
   transition: all 300ms ease-in-out;
 
-  &:hover {
-    box-shadow: 3px 3px 6px $grey-100;
-  }
-
   &.orange {
     background: $orange-400;
     color: #fff;

@@ -1,5 +1,5 @@
 'use client'
-import InputWithLabel from 'indies-squad/core-components/inputs/InputTextWithLabel'
+import InputWithLabel from 'indies-squad/core/inputs/InputTextWithLabel'
 import { ReactElement, useState } from 'react'
 import style from './login.module.scss'
 import Image from 'next/image'

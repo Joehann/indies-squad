@@ -1,0 +1,94 @@
+@import '../../../styles/variables/variables.scss';
+
+.home-page-out {
+  background: url('/assets/images/png/home-page-hero.png');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(255, 86, 8);
+    background: linear-gradient(332deg, $orange-400, $blue-300, $blue-200);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 25s ease infinite;
+    -moz-animation: AnimationName 25s ease infinite;
+    animation: AnimationName 25s ease infinite;
+    opacity: 0.3;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    padding: 60px;
+    border-radius: 20px;
+    background: #1a4474ce;
+
+    h1 {
+      font-size: 36px !important;
+      margin-bottom: 48px;
+    }
+
+    p {
+      margin: 48px 0 32px;
+      line-height: 1.3;
+      color: white;
+    }
+    ul {
+      color: white;
+      li {
+        margin: 8px 0 8px 40px;
+        list-style-type: disc;
+        list-style-position: outside;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 22%;
+  }
+  50% {
+    background-position: 100% 79%;
+  }
+  100% {
+    background-position: 0% 22%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 22%;
+  }
+  50% {
+    background-position: 100% 79%;
+  }
+  100% {
+    background-position: 0% 22%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 22%;
+  }
+  50% {
+    background-position: 100% 79%;
+  }
+  100% {
+    background-position: 0% 22%;
+  }
+}

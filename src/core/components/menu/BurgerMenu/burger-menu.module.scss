@@ -1,0 +1,51 @@
+@import '../../../../styles/variables/variables.scss';
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  padding: 12px;
+  background: #fafafa;
+  box-shadow: 0 2px 8px #00000044;
+  z-index: 100;
+
+  .login-button {
+    background: none;
+    width: 20px;
+    height: 20px;
+    padding: 0 !important;
+  }
+
+  .burger-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+
+    .line {
+      height: 3px;
+      background: $orange-400;
+      border-radius: 2px;
+
+      &:first-child {
+        width: 20px;
+      }
+
+      &:nth-child(2) {
+        width: 25px;
+      }
+
+      &:last-child {
+        width: 23px;
+      }
+    }
+  }
+}

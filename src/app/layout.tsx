@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { KobbleProvider } from '@kobbleio/next/server'
 import '../styles/reset.css'
 import '../styles/_main.scss'
-import BurgerMenu from 'indies-squad/core-components/menu/BurgerMenu'
-
-const inter = Inter({ subsets: ['latin'] })
+import Menu from 'indies-squad/core/components/menu/Menu'
 
 export const metadata: Metadata = {
   title: 'Indies Squad',
@@ -22,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <KobbleProvider>
-          <BurgerMenu />
+          {/* <Menu /> */}
           {children}
         </KobbleProvider>
       </body>
